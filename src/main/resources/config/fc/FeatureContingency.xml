@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FeatureContingencySet>
+	<!--
+		Feature Contingency contains following attributes: 
+		1. id 				this is the unique identifier of the fc 
+		2. name 			this is the display name make fc more readable 
+		3. status 	this is the status. 
+							Currently we have 3 status:
+								0 :ON
+								1 :OFF
+								2 :DELETED 
+		4. description		this attribute is optional
+	-->
+	<FeatureContingency id="0" name="SampleFC" status="1" description="This is a sample configuration" />
+	<FeatureContingency id="1" name="Hawk" status="0" description="For hawk" />
+	<FeatureContingency id="2" name="ShakeShop" status="0" description="For ShakeShop" />
+	<FeatureContingency id="3" name="Cat" status="0" description="For Cat" />
+	<FeatureContingency id="4" name="ReviewMobileService" status="0" description="For ReviewMobileService" />
+	<FeatureContingency id="5" name="GrouponService" status="0" description="For GrouponService" />
+	<FeatureContingency id="6" name="GrouponThrottling" status="0" description="" />
+    <FeatureContingency id="7" name="IphoneScore" status="0" description="pop up a dialogue screen ask user to give comment on appstore" />
+    <FeatureContingency id="8" name="Login" status="0" description="For LoginService, judge is call remoteService" />
+
+	<FeatureContingency id="10" name="RuleEngine" status="0" description="For Rule Engine" />
+
+	<FeatureContingency id="11" name="ConfigPush" status="0" description="For config.bin push " />
+
+	<FeatureContingency id="12" name="AddShop" status="0" description="For AddShop RemoteService" />
+	
+	<FeatureContingency id="13" name="UserBlocklist" status="0" description="For accquire user block list" />
+	
+	<FeatureContingency id="14" name="CheckInPic" status="0" description="For CheckIn Pic Migration" />
+
+	<FeatureContingency id="15" name="Membercard" status="0" description="For member card" />
+	
+	<FeatureContingency id="16" name="Favorite" status="0" description="For Favorite RemoteService" />
+	
+	<FeatureContingency id="17" name="SignUp" status="0" description="For SignUp RemoteService" />
+	
+	<FeatureContingency id="18" name="ThirdFeedLog" status="0" description="For third feed log" />
+	
+	<FeatureContingency id="19" name="DPSFLimit" status="0" description="For DPSFLimit" />
+	
+	<FeatureContingency id="20" name="FriendService" status="0" description="For Friend RemoteService" />
+	
+	<FeatureContingency id="21" name="UserServiceAtUC" status="0" description="For User RemoteService" />
+	
+	<FeatureContingency id="22" name="RemoteShopService" status="0" description="For Remote ShopService" />
+	
+</FeatureContingencySet>

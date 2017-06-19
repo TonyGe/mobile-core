@@ -1,0 +1,177 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!--<parent>-->
+		<!--<groupId>com.dianping.mobile</groupId>-->
+  		<!--<artifactId>mobile-parent</artifactId>-->
+  		<!--<version>1.0.4</version>-->
+	<!--</parent>-->
+	<groupId>com.dianping.mobile</groupId>
+	<artifactId>mobile-core</artifactId>
+	<version>1.2.7</version>
+	<packaging>jar</packaging>
+
+	<name>mobile-core</name>
+
+	<dependencies>
+		<!-- logger begin -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping</groupId>-->
+			<!--<artifactId>avatar-logger</artifactId>-->
+		<!--</dependency>-->
+		<!-- logger end -->
+		<!-- cache begin -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping</groupId>-->
+			<!--<artifactId>avatar-cache</artifactId>-->
+			<!--<version>2.6.7-SNAPSHOT</version>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.6.11</version>
+		</dependency>
+		<!-- cache end -->
+		<!-- dao begin -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping</groupId>-->
+			<!--<artifactId>avatar-dao</artifactId>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.dianping.dpdl</groupId>-->
+			<!--<artifactId>dpdl-simple</artifactId>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjlib</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.8.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		<!-- dao end -->
+		<!-- json util begin -->
+
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>LATEST</version>
+        </dependency>
+		<!-- json util end -->
+		<!-- dpsf begin -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping.dpsf</groupId>-->
+			<!--<artifactId>dpsf-net</artifactId>-->
+            <!--<version>1.9.8</version>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>com.dianping.cat</groupId>
+			<artifactId>cat-core</artifactId>
+			<version>1.4.6-SNAPSHOT</version>
+		</dependency>
+		<!-- dpsf end -->
+		<!-- hawk begin -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping.hawk</groupId>-->
+			<!--<artifactId>hawk-client</artifactId>-->
+		<!--</dependency>-->
+		<!-- hawk end -->
+		<!-- spring core begin -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+		<!-- spring core end -->
+		<!--<dependency>-->
+			<!--<groupId>com.dianping.zebra</groupId>-->
+			<!--<artifactId>zebra-ds-monitor-client</artifactId>-->
+		<!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.3.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>3.2.9.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+	<!--<profiles>-->
+		<!--<profile>-->
+			<!--<id>sonar</id>-->
+			<!--<activation>-->
+				<!--<activeByDefault>true</activeByDefault>-->
+			<!--</activation>-->
+			<!--<properties>-->
+				<!--<sonar.jdbc.url>-->
+					<!--jdbc:mysql://192.168.7.87:3306/sonar?useUnicode=true&amp;characterEncoding=utf8-->
+				<!--</sonar.jdbc.url>-->
+				<!--<sonar.jdbc.driverClassName>com.mysql.jdbc.Driver</sonar.jdbc.driverClassName>-->
+				<!--<sonar.jdbc.username>sonar</sonar.jdbc.username>-->
+				<!--<sonar.jdbc.password>sonar</sonar.jdbc.password>-->
+				<!--<sonar.host.url>http://192.168.7.87:9000</sonar.host.url>-->
+				<!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+			<!--</properties>-->
+		<!--</profile>-->
+	<!--</profiles>-->
+</project>
