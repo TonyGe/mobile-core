@@ -28,13 +28,13 @@ public abstract class AbstractNotifierJob implements INotifier {
         return interval;
     }
 
+    public void setInterval(long interval) {
+        this.interval = interval;
+    }
+
     @Override
     public long getLastRunTime() {
         return lastRunTime;
-    }
-
-    public void setInterval(long interval) {
-        this.interval = interval;
     }
 
     public void setLastRunTime(long lastRunTime) {

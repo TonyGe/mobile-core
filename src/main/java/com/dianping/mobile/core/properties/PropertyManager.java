@@ -12,8 +12,8 @@ import java.util.Properties;
 
 public class PropertyManager {
 
-    private static Map<String, Properties> propertiesCache = new HashMap<String, Properties>();
     private static final Logger log = Logger.getLogger(PropertyManager.class);
+    private static Map<String, Properties> propertiesCache = new HashMap<String, Properties>();
 
     private PropertyManager() {
     }

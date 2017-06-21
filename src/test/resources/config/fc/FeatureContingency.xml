@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <FeatureContingencySet>
-	<FeatureContingency id="0" name="SampleFC" status="1" description="This is a sample configuration" />
+    <FeatureContingency id="0" name="SampleFC" status="1" description="This is a sample configuration"/>
 </FeatureContingencySet>

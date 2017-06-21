@@ -15,16 +15,15 @@ import java.lang.reflect.Method;
  * @author kewen.yao
  */
 public abstract class MobileBaseService implements CacheConfigurable {
-    private final Logger log = Logger.getLogger(this.getClass());
-
-    @Resource(name = "serviceCacheFamily")
-    protected String serviceCacheFamily;
-
     private static final CacheServiceManager manager = new CacheServiceManager();
 
     static {
         manager.start();
     }
+
+    private final Logger log = Logger.getLogger(this.getClass());
+    @Resource(name = "serviceCacheFamily")
+    protected String serviceCacheFamily;
 
     @PostConstruct
     protected void init() {

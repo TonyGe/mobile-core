@@ -7,12 +7,10 @@ import org.apache.log4j.Logger;
 import java.lang.reflect.Method;
 
 public class CacheNotifierJob extends AbstractNotifierJob {
-    private final Logger log = Logger.getLogger(this.getClass());
-
     private static final long INTERVAL_WEB = 4L * 24 * 60 * 60 * 1000;
     private static final long INTERVAL_MC_10M = 10L * 60 * 1000;
     private static final long INTERVAL_MC = 1000L * 24 * 60 * 60 * 1000;
-
+    private final Logger log = Logger.getLogger(this.getClass());
     private MobileBaseService service;
     private Method method;
 

@@ -10,48 +10,11 @@ import java.util.*;
 
 public final class FeatureContingency {
 
-    public static class FC {
-
-        public static final int STATUS_ON = 0;
-        public static final int STATUS_OFF = 1;
-        public static final int STATUS_DELETE = 2;
-
-        private int id;
-        private int status;
-        private String name;
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public int getStatus() {
-            return status;
-        }
-
-        public void setStatus(int status) {
-            this.status = status;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-    }
-
+    private static final String FC_CONFIG_PATH = "classpath:/config/fc/FeatureContingency.xml";
     private static Logger log = Logger.getLogger(FeatureContingency.class);
 
 
     private static Map<Integer, FC> fcMap = new HashMap<Integer, FC>();
-
-    private static final String FC_CONFIG_PATH = "classpath:/config/fc/FeatureContingency.xml";
 
     static {
         loadConfiguration();
@@ -135,5 +98,41 @@ public final class FeatureContingency {
         }
 
         return sb.toString();
+    }
+
+    public static class FC {
+
+        public static final int STATUS_ON = 0;
+        public static final int STATUS_OFF = 1;
+        public static final int STATUS_DELETE = 2;
+
+        private int id;
+        private int status;
+        private String name;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public int getStatus() {
+            return status;
+        }
+
+        public void setStatus(int status) {
+            this.status = status;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
     }
 }
